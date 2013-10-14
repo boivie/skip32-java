@@ -40,6 +40,15 @@ public class Skip32 {
 		return (g5 << 8) + g6;
 	}
 
+	/**
+	 * Applies the SKIP32 function on the provided value stored in buf and
+	 * modifies it inplace. This is a low-level function used by the encrypt and
+	 * decrypt functions.
+	 * 
+	 * @param key
+	 * @param buf
+	 * @param encrypt
+	 */
 	public static void skip32(byte[] key, int[] buf, boolean encrypt) {
 		int k; /* round number */
 		int i; /* round counter */
@@ -74,6 +83,15 @@ public class Skip32 {
 		buf[3] = (wl & 0xFF);
 	}
 
+	/**
+	 * Encrypts the provided value using the specified key
+	 * 
+	 * The key should be a byte array of 10 elements.
+	 * 
+	 * @param value
+	 * @param key
+	 * @return The encrypted value
+	 */
 	public static int encrypt(int value, byte[] key) {
 		int[] buf = new int[4];
 		buf[0] = ((value >> 24) & 0xff);
@@ -89,6 +107,15 @@ public class Skip32 {
 		return out;
 	}
 
+	/**
+	 * Decrypts the provided value using the specified key
+	 * 
+	 * The key should be a byte array of 10 elements.
+	 * 
+	 * @param value
+	 * @param key
+	 * @return The decrypted value
+	 */
 	public static int decrypt(int value, byte[] key) {
 		int[] buf = new int[4];
 
