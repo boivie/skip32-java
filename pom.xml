@@ -27,6 +27,14 @@
     <url>git@github.com:boivie/skip32-java.git</url>
   </scm>
 
+  <developers>
+    <developer>
+      <id>vboivie</id>
+      <name>Victor Boivie</name>
+      <email>victor@boivie.com</email>
+    </developer>
+  </developers>
+
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
