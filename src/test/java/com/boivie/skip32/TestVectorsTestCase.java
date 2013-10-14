@@ -7,7 +7,7 @@ public class TestVectorsTestCase {
 
 	/**
 	 * tests compatibility with
-	 * https://github.com/dgryski/dskip32/blob/master/skip32_test.go
+	 * https://github.com/dgryski/dskip32/
 	 */
 	@Test
 	public void testSkip32Go() {
@@ -27,7 +27,7 @@ public class TestVectorsTestCase {
 
 	/**
 	 * tests compatibility with
-	 * https://github.com/alestic/Crypt-Skip32/blob/master/t/01basic.t
+	 * https://github.com/alestic/Crypt-Skip32/
 	 */
 	@Test
 	public void testCryptSkip32() {
