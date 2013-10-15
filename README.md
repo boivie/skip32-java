@@ -6,6 +6,16 @@ The algorithm is useful for obfuscating 32-bit integers, such as database IDs, t
 
 ## Usage
 
+Either download and compile it yourself from source, or use this in your pom.xml:
+
+    <dependency>
+      <groupId>com.boivie</groupId>
+      <artifactId>skip32</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+Your java code will look something like:
+
     import com.boivie.skip32.Skip32
     
     ...
